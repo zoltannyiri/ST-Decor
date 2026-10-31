@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'motion/react'
 
 import WelcomePage from './pages/WelcomePage'
 import HomePage from './pages/HomePage'
+import Navbar from './components/Navbar'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route
           path="/"
