@@ -1,0 +1,11 @@
+.hero-image-shape {
+  width: 100%;
+  height: 100%;
+  clip-path: ellipse(100% 108% at 100% 0%);
+}
+
+@media (min-width: 1024px) {
+  .hero-image-shape {
+    clip-path: ellipse(100% 108% at 100% 0%);
+  }
+}
