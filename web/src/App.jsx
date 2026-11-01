@@ -21,7 +21,9 @@ function App() {
 
   return (
     <Router>
-      <Navbar />
+      {!showWelcome && (
+        <Navbar />
+      )}
       <Routes>
         <Route
           path="/"
