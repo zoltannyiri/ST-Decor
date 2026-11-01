@@ -55,7 +55,18 @@ export default function Navbar() {
       <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
 
         {/* Brand */}
-        <img src="/logo.jpeg" alt="Logo" onClick={() => scrollTo("home")} className="h-20 w-50 rounded rounded-xl object-cover" />
+        <button
+          type="button"
+          onClick={() => scrollTo("home")}
+          aria-label="ST Design Decor - Kezdőlap"
+          className="group relative z-10 flex shrink-0 items-center"
+        >
+          <img
+            src="/logo2.png"
+            alt="ST Design Decor"
+            className="h-auto w-[122px] object-contain transition-transform duration-300 group-hover:scale-105 sm:w-[148px] lg:w-[174px]"
+          />
+        </button>
 
         {/* Desktop navigáció */}
         <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-8 lg:flex">
