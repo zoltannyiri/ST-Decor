@@ -1,6 +1,7 @@
 import AboutSection from "../components/Home/AboutSection"
 import HeroHeader from "../components/Home/HeroHeader"
 import TestimonalsSection from "../components/Home/TestimonialsSection"
+import FaqSection from "../components/Home/FaqSection"
 
 export default function HomePage() {
   return (
@@ -8,6 +9,7 @@ export default function HomePage() {
       <HeroHeader />
       <AboutSection />
       <TestimonalsSection />
+      <FaqSection />
     </div>
   )
 }
