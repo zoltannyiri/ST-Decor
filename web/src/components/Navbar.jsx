@@ -109,7 +109,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="overflow-hidden border-t border-[#c39d4a]/10 bg-[#080d16]/95 lg:hidden"
+            className="overflow-hidden border-t border-[gray]/10 border-1 bg-linear-to-br from-white via-[#f3f8ff] to-[#dcebff] lg:hidden"
           >
             <div className="flex flex-col items-center gap-6 px-6 py-8">
               {menuItems.map((item) => (
@@ -120,26 +120,11 @@ export default function Navbar() {
                     e.preventDefault()
                     scrollTo(item.id)
                   }}
-                  className="text-sm tracking-widest text-[#d0d1d3] transition-colors hover:text-[#c39d4a]"
+                  className="text-sm tracking-widest text-[#2a2a2b] transition-colors hover:text-[#c39d4a]"
                 >
                   {item.label}
                 </a>
               ))}
-
-              <div className="mt-3 flex gap-5">
-                {["HU", "EN"].map((lang) => (
-                  <button
-                    key={lang}
-                    type="button"
-                    onClick={() => setLanguage(lang)}
-                    className={language === lang
-                      ? "text-[#c39d4a]"
-                      : "text-[#d0d1d3]/50"}
-                  >
-                    {lang}
-                  </button>
-                ))}
-              </div>
             </div>
           </motion.nav>
         )}
