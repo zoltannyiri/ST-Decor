@@ -33,8 +33,8 @@ export default function FaqSection() {
     >
       {/* finom háttér */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-[-120px] top-20 h-72 w-72 rounded-full bg-[#dcebff]/40 blur-[100px]" />
-        <div className="absolute right-[-120px] bottom-10 h-72 w-72 rounded-full bg-[#eee8df]/70 blur-[100px]" />
+        <div className="absolute left-[-120px] top-20 h-72 w-72 rounded-full bg-[#dcebff]/40" />
+        <div className="absolute right-[-120px] bottom-10 h-72 w-72 rounded-full bg-[#eee8df]/70" />
       </div>
 
       <div className="relative mx-auto max-w-4xl">
